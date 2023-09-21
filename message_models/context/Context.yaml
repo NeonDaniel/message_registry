@@ -1,0 +1,53 @@
+source:
+  type: Union[List[str], str]
+  required: True
+  description: Origin service or list of services
+destination:
+  type: Union[List[str], str]
+  required: True
+  description: Destination service or list of services
+session:
+  type: Session
+  required: False
+  default: None
+  description: Serialized session associated with this message
+username:
+  type: str
+  required: False
+  default: local
+  description: Username associated with this Message
+ident:
+  type: str
+  required: False
+  default: None
+  description: Unique identifier associated with a user input
+client:
+  type: str
+  required: False
+  default: "unknown"
+  description: Class of client interface associated with user input
+client_name:
+  type: str
+  required: False
+  default: None
+  description: Friendly name of client interface associated with user input
+user_profiles:
+  type: List[UserProfile]
+  required: False
+  default: None
+  description: List of UserProfile objects for any users associated with a Message
+mq:
+  type: dict
+  required: False
+  default: None
+  description: MQ routing data
+klat_data:
+  type: dict
+  required: False
+  default: None
+  description: Klat message data
+neon_should_respond:
+  type: bool
+  required: False
+  default: None
+  description: Flag indicating if this message explicitly expects a skill response

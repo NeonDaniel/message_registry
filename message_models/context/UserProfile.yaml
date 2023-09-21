@@ -1,0 +1,30 @@
+user:
+  type: dict
+  required: True
+  default: {}
+  alias: None
+  description: Basic User information, including name and other PII
+brands:
+  type: dict
+  required: False
+  description: Information about liked brands
+speech:
+  type: dict
+  required: True
+  description: Language configuration for STT and TTS
+units:
+  type: dict
+  required: True
+  description: Unit of measure and formatting preferences
+location:
+  type: dict
+  required: True
+  description: User location configuration
+response_mode:
+  type: dict
+  required: False
+  description: User preferences for skill responses
+privacy:
+  type: dict
+  required: False
+  description: User preferences for analytics and data sharing

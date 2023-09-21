@@ -1,0 +1,10 @@
+timeout:
+  type: int
+  required: False
+  default: -1
+  description: Timeout in seconds before Session expires
+frame_stack:
+  type: List[Tuple[IntentContext, float]]
+  required: False
+  default: []
+  description: List of (IntenContext, timestamp) data

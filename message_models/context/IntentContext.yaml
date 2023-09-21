@@ -1,0 +1,10 @@
+entities:
+  type: list
+  required: False
+  default: []
+  description: List of string entities in context
+metadata:
+  type: dict
+  required: False
+  default: {}
+  description: Dict of metadata relating to an intent match

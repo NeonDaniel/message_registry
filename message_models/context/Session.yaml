@@ -1,0 +1,34 @@
+active_skills:
+  type: List[Tuple[str, float]]
+  required: False
+  default: []
+  description: List of active skills as (name, timestamp)
+utterance_states:
+  type: Dict[str, str]
+  required: False
+  default: {}
+  description: Dict of skill_id to utterance state (intent/response)
+session_id:
+  type: str
+  required: True
+  description: UUID of the Session
+history:
+  type: List[Tuple[Message, float]]
+  required: False
+  default: None
+  description: List of (Message, timestamp) data for the session
+lang:
+  type: str
+  required: True
+  default: "en-us"
+  description: BCP-47 code of language associated with this session
+valid_languages:
+  type: str
+  required: False
+  default: None
+  description: List of BCP-47 language codes valid in this session
+contest:
+  type: SessionContext
+  required: False
+  default: None
+  description: SessionContext object associated with this session
